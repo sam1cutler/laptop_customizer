@@ -13,7 +13,7 @@ class FeatureOptions extends Component {
   static defaultProps = { 
     currentFeature: [],
     feature: [],
-    currentSelections: []
+    featureSelection: []
   };
 
   render() {
