@@ -98,7 +98,7 @@ class App extends Component {
     return (
       <div className="App">
         <header>
-          <h1>ELF Computing | Laptops</h1>
+          <h1>ELF Computing | Laptops | ...and more!</h1>
         </header>
         <main>
           <form className="main__form">
