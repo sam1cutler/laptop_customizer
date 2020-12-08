@@ -35,6 +35,7 @@ class App extends Component {
   };
 
   updateFeature = (feature, newValue) => {
+    console.log('Feature wants to be updated.')
     const selected = Object.assign({}, this.state.selected);
     selected[feature] = newValue;
     this.setState({
@@ -105,10 +106,11 @@ class App extends Component {
           <form className="main__form">
             <CustomizerOptions 
               currentSelections={this.state.selected}
+              handleUpdateFeature={(feature, value) => this.updateFeature(feature, value)}
             />
           </form>
 
-          <form className="main__form">
+          <form className="main__form hidden">
             <h2>Customize your laptop</h2>
             {features}
           </form>

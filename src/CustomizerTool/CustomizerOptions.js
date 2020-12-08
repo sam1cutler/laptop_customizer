@@ -22,6 +22,7 @@ class CustomizerOptions extends Component {
                     currentFeature={FEATURES[feature]}
                     feature={feature}
                     featureSelection={this.props.currentSelections[feature]}
+                    handleUpdateFeature={this.props.handleUpdateFeature}
                 />
               </fieldset>
             );
