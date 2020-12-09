@@ -6,6 +6,10 @@
   display: none;
 }
 
+ul {
+  list-style-type: none;
+}
+
 html {
   font: calc(100% * 0.625) / 1.15 HelveticaNeue, Helvetica, sans-serif;
 }

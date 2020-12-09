@@ -2,6 +2,8 @@ import React, { Component } from 'react';
 import './App.css';
 import slugify from 'slugify'; // Normalizes string as a slug 
 import CustomizerOptions from './CustomizerTool/CustomizerOptions';
+import Cart from './Cart/Cart';
+import CartTotal from './Cart/CartTotal';
 
 // convert numbers into US dollar values
 const USCurrencyFormat = new Intl.NumberFormat('en-US', {
@@ -115,7 +117,6 @@ class App extends Component {
             {features}
           </form>
 
-
           <section className="main__summary">
             <h2>Your cart</h2>
             {summary}
@@ -125,6 +126,16 @@ class App extends Component {
                 {USCurrencyFormat.format(total)}
               </div>
             </div>
+          </section>
+
+          <section className='main__summary'>
+            <h2>Your cart!</h2>
+            <Cart 
+              currentSelections={this.state.selected}
+            />
+            <CartTotal 
+              selected={this.state.selected}  
+            />
           </section>
 
         </main>
