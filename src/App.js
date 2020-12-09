@@ -2,7 +2,6 @@ import React, { Component } from 'react';
 import './App.css';
 import CustomizerOptions from './CustomizerTool/CustomizerOptions';
 import Cart from './Cart/Cart';
-import CartTotal from './Cart/CartTotal';
 
 class App extends Component {
 
@@ -59,9 +58,6 @@ class App extends Component {
             <h2>Your cart!</h2>
             <Cart 
               currentSelections={this.state.selected}
-            />
-            <CartTotal 
-              selected={this.state.selected}  
             />
           </section>
 

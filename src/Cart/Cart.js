@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import './Cart.css';
 import CartItem from './CartItem';
+import CartTotal from './CartTotal';
 
 
 class Cart extends Component {
@@ -29,6 +30,9 @@ class Cart extends Component {
                 <ul className="summary-list">
                     {summary}
                 </ul>
+                <CartTotal
+                    selected={this.props.currentSelections}
+                />
             </div>
         )
 
