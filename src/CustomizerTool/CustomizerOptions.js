@@ -30,7 +30,7 @@ class CustomizerOptions extends Component {
         
         return (
             <div>
-                <h2>CstmIZE yr laptop</h2>
+                <h2>Customize your laptop</h2>
                 {features}
             </div>
         )
