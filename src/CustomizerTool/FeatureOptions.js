@@ -23,6 +23,7 @@ class FeatureOptions extends Component {
             itemHash={itemHash}
             feature={this.props.feature}
             featureSelection={this.props.featureSelection}
+            handleUpdateFeature={this.props.handleUpdateFeature}
           />
         </div>
       );
